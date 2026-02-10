@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <img src="./fondo.jpg" alt="" class="fondo">
+  <section class="sun"></section>
+  <section class="moon"></section>
+  <section class="moon"></section>
+  <main class="flower-container">
+    <div class="rose">
+      <div class="petal1"></div>
+      <div class="petal2"></div>
+      <div class="petal3"></div>
+      <div class="petal4"></div>
+      <div class="petal5"></div>
+      <div class="petal6"></div>
+    </div>
+    <div class="reflejo1"></div>
+    <div class="reflejo2"></div>
+    <div class="stem1"></div>
+    <div class="stem2">
+      <img src="./hoja2.svg" alt="" class="hoja">
+    </div>
+    <div class="stem3">
+      <img src="./hoja.svg" alt="" class="hoja">
+    </div>
+    <div class="stem4">
+      <img src="./hoja2.svg" alt="" class="hoja">
+    </div>
+    <div class="stem5">
+      <img src="./hoja.svg" alt="" class="hoja">
+    </div>
+    <div class="top"></div>
+    <div class="leaf"></div>
+    <div class="grass">
+      <script>
+      for(let i=0; i<500; i++){
+        let g = document.createElement('div');
+        g.className = 'grass-blade';
+        g.style.left = Math.random()*100 + '%';
+        g.style.height = (Math.random()*20 + 10) + 'px';
+        g.style.animationDelay = (Math.random()*5) + 's';
+        document.querySelector('.grass').appendChild(g);
+      }
+      </script>
+    </div>
+    <section class="nombre">
+      <p>Tori&lt;3</p>
+    </section>
+    <div class="particles-container"></div>
+    <script>
+    const container = document.querySelector('.particles-container');
+    container.style.opacity = 0;
+    for(let i=0; i<30; i++){
+      let p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random()*100 + '%';
+      p.style.animationDelay = (Math.random()*3) + 's';
+      container.appendChild(p);
+    }
+    setTimeout(() => {
+      container.style.opacity = 1;
+    }, 3000);
+    </script>
+  </main>
+</body>
+</html>
