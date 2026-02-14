@@ -466,9 +466,10 @@ body{
   }
 }
 
-@media (max-width: 390px){ 
+@media (max-width: 290px){ 
     .flower-container {
     width: 50%;
+    
     min-height: 500px;
     border-radius: 30% 30% 0 0;
   }
