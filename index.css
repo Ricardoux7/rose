@@ -264,8 +264,11 @@ body{
 }
 
 .nombre p{
+  font-family: "Marck Script", cursive;
   color: rgb(150, 55, 179);
   font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
 }
 
 .particle{
