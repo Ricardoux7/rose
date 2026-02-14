@@ -13,7 +13,10 @@
   <section class="moon"></section>
   <section class="moon"></section>
   <main class="flower-container">
+          <section class="aura">
+      </section>
     <div class="rose">
+
       <div class="petal1"></div>
       <div class="petal2"></div>
       <div class="petal3"></div>
@@ -61,12 +64,11 @@
       let p = document.createElement('div');
       p.className = 'particle';
       p.style.left = Math.random()*100 + '%';
-      p.style.animationDelay = (Math.random()*3) + 's';
+      p.style.animationDelay = (Math.random()*5) + 's';
       container.appendChild(p);
     }
-    setTimeout(() => {
       container.style.opacity = 1;
-    }, 3000);
+
     </script>
   </main>
 </body>
